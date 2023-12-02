@@ -17,9 +17,9 @@ const addNote = (title, body) => {
         })
         // pastes it in notes.json
         saveNotes(notes)
-        console.log('New note added!')
+        console.log(chalk.green('New note added!'))
     } else {
-        console.log('Note title taken')
+        console.log(chalk.red('Note title taken'))
     }
 }
 
